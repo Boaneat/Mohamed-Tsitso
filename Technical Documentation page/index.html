@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Documentation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav id="navbar">
+        <header>Python Documentation</header>
+        <ul>
+            <li>
+                <a class="nav-link" href="#Getting_Started_With_Python">Getting Started With Python</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#Python_Entry_Point">Python Entry Point</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#Printing_in_Python">Printing_in_Python</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#Declaring Function">Declaring Function</a>
+            </li>
+            
+            <li>
+                <a class="nav-link" href="#Object_Oriented_Programming">Object Oriented Programming</a>
+            </li>
+        </ul>
+    </nav>
+    <main id="main-doc">
+        <section  id="#Getting_Started_With_Python">
+            <header>Getting Started With Python</header>
+            <p>steps in getting started</p>
+            <ol>
+                <li>Download Python</li>
+                <li>Install Python pip</li>
+                <li>Get an Integrated Development Environment</li>
+                <li>Start a project within the IDE</li>
+                <li>Code up "Hello World and run the code</li>
+            </ol>
+        </section id="Python_Entry_Point">
+        <section>
+            <header>Python Entry Point</header>
+            <p>the entry point to python application is the running the fucntion</p>
+            <p>it is characterised by a function name with parameters</p>
+            <pre>
+                <code>
+                    my_function(name,surname):
+                        # Python function example 
+                        print("hello, " + name +" " + surname)
+                </code>
+            </pre>
+        </section>
+        <section id="Printing_in_Python">
+            <header>Printing in Python</header>
+            <p>As you can see the fucntion is indented as stucture of Python language</p>
+            <p>The name of the function is therefore "my_function"</p>
+            <p>In order to print to the screen we use print()</p>
+            <p>this makes pyhon very concise compared to other languages</p>
+            <pre>
+                <code>
+                    my_variable = "Hello world!"
+                    print(my_variable)
+                </code>
+            </pre>
+            <p>In this example we are printing hello world after declaring a variable</p>
+        </section>
+        <section id="Declaring Function">
+            <header>Declaring Function</header>
+            <p>Function are actually called methods in python</p>
+            <p>
+                <img src="python-functions.jpg" alt="python fucntion" class="image">
+            </p>
+            <p>Some copiable code</p>
+            <pre>
+                <code>
+                    add_two_numbers():
+                        num_a = 2
+                        num_b = 2
+                        sum = num_a + num_b
+                        print(sum)
+                </code>
+            </pre>
+        </section>
+        <section id="Object_Oriented_Programming">
+            <header>Object Oriented Programming</header>
+            <p>Python is known as an object object oriented programming</p>
+            <p>This means it is easy ti represent entities as objects by using classes and encapsulation</p>
+            <p>An example of a this might be represented by Room class to represent a room </p>
+            <pre>
+                <code>
+                    # create a class
+                    class Room:
+                        length = 0.0
+                        breadth = 0.0
+                        
+                        # method to calculate area
+                        def calculate_area(self):
+                            print("Area of Room =", self.length * self.breadth)
+
+                    # create object of Room class
+                    study_room = Room()
+
+                    # assign values to all the attributes 
+                    study_room.length = 42.5
+                    study_room.breadth = 30.8
+
+                    # access method inside class
+                    study_room.calculate_area()
+                </code>
+            </pre>
+            <p>We use this class by calling the class</p>
+        </section>
+        <footer>
+            <p>Documentation brought to you in the fly by Tsitso and Mohhamed</p>
+        </footer>
+    </main>
+</body>
+</html>
